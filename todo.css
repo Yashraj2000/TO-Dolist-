@@ -1,0 +1,87 @@
+#container{
+	width: 360px;
+	margin: 100px auto;
+	background: #f7f7f7;
+    box-shadow: 0 0 30px rgb(0,0,0, .1);
+}
+
+h1{
+	background: blue;
+	color: white;
+	margin: 0px;
+	padding: 10px 20px;
+	font-size: 24px;
+	font-weight: 400 ;  /* normal font weight*/
+	text-transform: uppercase;
+}
+
+
+.add{
+	color: gray;
+	text-decoration: line-through;
+}
+
+ul{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+li:nth-child(even){
+	background: white;
+}
+
+li{
+	height: 40px;
+	line-height: 40px;   /* we can use this to bring content in center and use box-size = border-box if width of certain thing flows out of the container */
+}
+
+input{
+
+	padding: 20px;
+	margin: 0px;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 20px;
+	color: black;
+	border: 3px solid white;
+}
+
+
+
+input:focus{    /* here focus means when we click on it i.e select it then changes occurs*/
+background: #f7f7f7;
+color: black;
+outline: none;
+border: 2px solid blue;		
+}
+
+body{
+	background: #8360c3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+span{
+	margin-right: 20px;
+	background-color: red;
+	color: white;
+	text-align: center;
+	height: 40px;
+	width: 0px;
+	display:inline-block;  /*helps to set width and height*/
+	opacity: 0;
+
+}
+
+li:hover span{
+	width: 40px;
+	opacity: 1;
+			transition: 0.2s linear;
+
+}
+
+.fa-plus{
+	float: right;
+}
